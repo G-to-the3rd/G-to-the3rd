@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&display=swap" rel="stylesheet">
+        <title>Compworld</title>
+        <style>
+            body{
+                background-image: url(Images/futuristicbinarytech.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes col {
+                from {
+                    color: white;
+                }
+                to {
+                    color: aqua;
+                }
+            }
+            @keyframes col2 {
+                from {
+                    color: aqua;
+                }
+                to {
+                    color: white;
+                }
+            }
+            @keyframes col3 {
+                from {
+                    color: white;
+                }
+                to {
+                    color: red;
+                }
+            }
+            @keyframes col4 {
+                from {
+                    color: red;
+                }
+                to {
+                    color: white;
+                }
+            }
+            .header{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);       
+            }
+            .nav{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                animation: fadeIn 4s ease-in-out forwards; 
+                font-size: x-large;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            .intro{
+                display: flex;
+                justify-content: center;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: blue;
+                font-size: xx-large;
+                animation: fadeIn 4s ease-in-out forwards;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            ul{
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul li {
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a {
+                display: flex;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                animation: col2 1s ease-in-out both;
+            }
+            ul li a:hover{
+                animation: col 1s ease-in-out both;
+            }
+            a {
+                align-items: center;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                animation: col2 1s ease-in-out both;
+            }
+            a:hover{
+                animation: col 1s ease-in-out both;  
+            }
+            .a2{
+                animation: col4 1s ease-in-out both;
+            }
+            .a2:hover{
+                animation: col3 1s ease-in-out both;
+            }
+            .container{
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;    
+                align-self: center;
+                font-family: "Asimovian", sans-serif;
+                width: 1500px;
+                height: 400px;
+                padding: 10px; 
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+            .item{
+                text-align: center;
+                background-image: url(Images/hud.jpg);
+                background-size: 470px 145px;
+                background-repeat: no-repeat;
+                color: white;
+                border-radius: 10px;
+                width: 450px;
+                padding: 10px;
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+            .item2{
+                text-align: center;
+                background-image: url(Images/hud.jpg);
+                background-size: 470px 145px;
+                background-repeat: no-repeat;
+                color: white;
+                border-radius: 10px;
+                width: 450px;
+                padding: 10px;
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+            .item3{
+                text-align: center;
+                background-image: url(Images/hud.jpg);
+                background-size: 470px 145px;
+                background-repeat: no-repeat;
+                color: white;
+                border-radius: 10px;
+                width: 450px;
+                padding: 10px;
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Compworld</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">>Home</a></li>
+                <li><a class="a2" href="aboutme.html">???</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="generations.html">Generations</a></li>
+                <li><a href="computer-types.html">Types of Computers</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <p>Welcome to Compworld, feel free to explore the realm of digital technology!!!</p>
+        </div>
+        <div class="container">
+            <div class="item">
+                <h1><a href="history.html">History</a></h1>
+                <p>Uncover the origins of Computers!</p>
+            </div>
+            <div class="item2">
+                <h1><a href="generations.html">Generations</a></h1>
+                <p>Learn about generations upon generations of complore!</p>
+            </div>
+            <div class="item3">
+                <h1><a href="computer-types.html">Types of Computers</a></h1>
+                <p>Discover various forms of computers!</p>
+            </div>
+        </div>
+    </body>
+</html>
