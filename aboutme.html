@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&display=swap" rel="stylesheet">
+        <title>[REDACTED]</title>
+        <style>
+            body{
+                background-image: url(Images/redbinary.gif);
+                background-repeat: no-repeat;
+                background-size: 1920px 1080px;
+                margin: 0;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeinout{
+                33% {
+                    opacity: 1;
+                }
+                66% {
+                    opacity: 0;
+                }
+                100% {opacity: 1;
+                }
+            }
+            @keyframes col {
+                from {
+                    color: red;
+                }
+                to {
+                    color: aqua;
+                }
+            }
+            @keyframes col2 {
+                from {
+                    color: aqua;
+                }
+                to {
+                    color: red;
+                }
+            }
+            .header{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: red;
+                text-align: center;
+                animation: fadeinout 3s ease-in-out both;
+                animation-iteration-count: infinite;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(255, 0, 110),
+                0 0 82px rgb(255, 0, 90),
+                0 0 92px rgb(255, 0, 60),
+                0 0 102px rgb(255, 0, 30), 
+                0 0 151px rgb(255, 0, 0);       
+            }
+            .header2{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+            .header3{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: red;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+            }
+            .parent{
+                display: flex;
+                justify-content: center;
+            }
+            .content{
+                font-family: "Asimovian", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                width: 40%;
+                text-align: justify;
+                padding: 15px;
+                background-color: rgb(140, 56, 56);
+                border-radius: 10px;
+                animation: fadeIn 2s ease-in-out forwards;
+            }
+            ul{
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul li {
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a {
+                display: flex;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: red;
+                animation: col2 1s ease-in-out both;
+            }
+            ul li a:hover{
+                animation: col 1s ease-in-out both;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="header">
+            <h1>CONFIDENTIAL: LEVEL 5 CLEARANCE</h1>
+        </div>
+        <div class="header2">
+            <h1>Warning: Unauthorized readers will be terminated.</h1>
+        </div>
+        <div class="parent">
+            <div class="content">
+                <p>Hi, my name is Godofredo De Lara III. A scholar of Philippine Science High School - Central Luzon Campus, Batch 2029, Grade 9, Section Samat. I am very lucky to have become a lateral student last school year, as I have always aimed to study and thrive in the premier science high school of the Philippines. You may be wondering, why make a webpage about computers?</p>
+                <p>Well as of now, computers are my main interest. I love to explore and experiment with computer parts to test for the most optimal performance. I have a desktop computer at home and it is currently my sort of experimental specimen. During vacation before entering Pisay, I would often install various operating systems and tamper with almost everything on that computer. But now, things have gotten too busy, and I was not able to continue with my experiment. I am currently working to install linux ubuntu server onto it to serve as a local cloud for all of the computers at home. That is basically the end of it.. I hope you enjoy browsing on my website.</p>
+                <p>By the way, this webpage is harmless, I just wanted to spice it up a little. :D</p>
+            </div>
+        </div>
+        <div class="header3">
+            <ul>
+                <li><h3><a href="index.html">Return to Homepage</a></h3></li>
+            </ul>
+        </div>
+    </body>
+</html>
