@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&display=swap" rel="stylesheet">
+        <title>History of computers</title>
+        <style>
+            body{
+                background-image: url(Images/futuristicbinarytech.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes col {
+                from {
+                    color: white;
+                }
+                to {
+                    color: aqua;
+                }
+            }
+            @keyframes col2 {
+                from {
+                    color: aqua;
+                }
+                to {
+                    color: white;
+                }
+            }
+            @keyframes col3 {
+                from {
+                    color: white;
+                }
+                to {
+                    color: red;
+                }
+            }
+            @keyframes col4 {
+                from {
+                    color: red;
+                }
+                to {
+                    color: white;
+                }
+            }
+            .header{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);       
+            }
+            .nav{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                animation: fadeIn 4s ease-in-out forwards; 
+                font-size: x-large;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            ul{
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul li {
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a {
+                display: flex;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                animation: col2 1s ease-in-out both;
+            }
+            ul li a:hover{
+                animation: col 1s ease-in-out both;
+            }
+            .a2{
+                animation: col4 1s ease-in-out both;
+            }
+            .a2:hover{
+                animation: col3 1s ease-in-out both;
+            }
+            .info{
+                animation: fadeIn 2s ease-in-out forwards;
+                display: flex;
+                justify-content: space-between;
+                align-content: space-around;
+                height: 1575px;
+                flex-wrap: wrap;
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                text-align: justify;
+            }
+            .intro{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                color: blue;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            .introd{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                margin-left: 400px;
+                margin-right: 400px;
+                text-align: justify;
+                color: white;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff;
+            }
+            .subinfo1{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(34, 120, 120);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 635px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo2{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(1, 108, 109);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 635px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo3{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud3.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 500px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo4{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud3.jpg);
+                background-repeat: no-repeat;
+                background-size: 460px 500px;
+                border-radius: 20px;
+                width: 430px;
+                padding: 15px;
+            }
+            .subinfo5{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud3.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 500px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo6{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 190px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }  
+            .subinfo7{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 190px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo8{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 190px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo9{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 180px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo10{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 180px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+            .subinfo11{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud.jpg);
+                background-repeat: no-repeat;
+                background-size: 430px 180px;
+                border-radius: 20px;
+                width: 400px;
+                padding: 15px;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="header">
+            <h1>Compworld</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="a2" href="aboutme.html">???</a></li>
+                <li><a href="history.html">>History</a></li>
+                <li><a href="generations.html">Generations</a></li>
+                <li><a href="computer-types.html">Types of Computers</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>Introduction</h2>
+        </div>
+        <div class="introd">
+            <p>
+                Computers, in modern standards, are highly complex devices that quickly process data. 
+                Of course, computers would not be what they are today without the milestones and achievements beforehand.  
+                Here are some of the most notable historical computers that have made significant impact on technological development.
+            </p>
+        </div>
+        <div class="info">
+            <div class="subinfo1">
+                <h2 class="intro">The Human Hand</h2>
+                <img src="Images/Hand.jpg" alt="The Human Hand" width="650">
+                <p>
+                    Before 2000 B.C., human fingers were considered the earliest computing devices.
+                    It allowed counting in multiples of 5 due to having 5 fingers each hand.
+                </p>
+            </div>
+            <div class="subinfo2">
+                <h2 class="intro">The Abacus</h2>
+                <img src="Images/abacus.jpg" alt="The Abacus" width="650">
+                <p>
+                    Due to the limitations of counting with the human hand, the Middle East began counting
+                    through the use of stones in trays. The Babylonians later adapted this idea into the development of the Abacus.
+                </p>
+            </div>
+            <div class="subinfo3">
+                <h2 class="intro">The Pascaline</h2>
+                <img src="Images/pascaline.jpg" alt="The Pascaline" width="395" height="300">
+                <p>
+                    A computing device invented by Blaise Pascal.
+                </p>
+            </div>
+            <div class="subinfo4">
+                <h2 class="intro">The Difference and Analytical Engine</h2>
+                <img src="Images/Difference_engine.jpg" alt="The Difference Engine" width="130" height="200">
+                <img src="Images/Analytical_Engine.png" alt="The Analytical Engine" height="200">
+                <p>
+                    Two devices invented by an Englishman mathematician and inventor, Charles Babbage.
+                    The difference engine solves polynomial equations through the methods of differences.
+                    While the analytical engine is designed as a general computing device.
+                </p>
+            </div>
+            <div class="subinfo5">
+                <h2 class="intro">The Tabulating Machine</h2>
+                <img src="Images/Tabulating_Machine.jpg" alt="The Tabulating Machine" width="397">
+                <p>
+                    A device consisting of punch cards and a punch card reader, thus allowing it to "tabulate" data.
+                </p>
+            </div>
+            <div class="subinfo6">
+                <h2 class="intro">Mark I</h2>
+                <p>
+                    An electromechanical device built for the navy. It primarily utilizes relays.
+                </p>
+            </div>
+            <div class="subinfo7">
+                <h2 class="intro">Colossus</h2>
+                <p>
+                    A device built for the British. Utilized for wartime code-breaking of German radio transmission
+                </p>
+            </div>
+            <div class="subinfo8">
+                <h2 class="intro">Atanasoff Berry Computer or ABC</h2>
+                <p>
+                    The first ever electronic digital computer. It was constructed at IOWA state.
+                </p>
+            </div>
+            <div class="subinfo9">
+                <h2 class="intro">ENIAC</h2>
+                <p>
+                    The most famous of the early computers containing roughly 18,000 vacuum tubes, used by the army for ballistic calculations.
+                </p>
+            </div>
+            <div class="subinfo10">
+                <h2 class="intro">EDVAC</h2>
+                <p>
+                    The first ever stored memory computing device.
+                </p>
+            </div>
+            <div class="subinfo11">
+                <h2 class="intro">UNIVAC</h2>
+                <p>
+                    The first ever commercially available computer, primarily used for businesses.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
