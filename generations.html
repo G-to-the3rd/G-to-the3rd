@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&display=swap" rel="stylesheet">
+        <title>Generations of Computer</title>
+        <style>
+            body{
+                background-image: url(Images/futuristicbinarytech.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes col {
+                from {
+                    color: white;
+                }
+                to {
+                    color: aqua;
+                }
+            }
+            @keyframes col2 {
+                from {
+                    color: aqua;
+                }
+                to {
+                    color: white;
+                }
+            }
+            @keyframes col3 {
+                from {
+                    color: white;
+                }
+                to {
+                    color: red;
+                }
+            }
+            @keyframes col4 {
+                from {
+                    color: red;
+                }
+                to {
+                    color: white;
+                }
+            }
+            .header{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);       
+            }
+            .nav{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                animation: fadeIn 3s ease-in-out forwards; 
+                font-size: x-large;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            .intro{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                color: blue;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            .introd{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                margin-left: 400px;
+                margin-right: 400px;
+                text-align: justify;
+                color: white;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff;
+            }
+            ul{
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul li {
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a {
+                display: flex;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                animation: col2 1s ease-in-out both;
+            }
+            ul li a:hover{
+                animation: col 1s ease-in-out both;
+            }
+            .a2{
+                animation: col4 1s ease-in-out both;
+            }
+            .a2:hover{
+                animation: col3 1s ease-in-out both;
+            }
+            .info{
+                animation: fadeIn 2s ease-in-out forwards;
+                display: flex;
+                justify-content: space-around;
+                align-content: space-around;
+                height: 1575px;
+                flex-wrap: wrap;
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                text-align: justify;
+            }
+            .subinfo1{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(34, 120, 120);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 700px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo2{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(1, 108, 109);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 700px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo3{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 595px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo4{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(29, 29, 138);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 595px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo5{
+                animation: fadeIn 9s ease-in-out both;
+                background-color: navy;
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 830px 221px;
+                border-radius: 20px;
+                width: 800px;
+                padding: 15px;
+            }
+            .imgcenter{
+                text-align: center;
+            }
+        </style>    
+    </head>
+    <body>
+            <div class="header">
+                <h1>Compworld</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="a2" href="aboutme.html">???</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="generations.html">>Generations</a></li>
+                    <li><a href="computer-types.html">Types of Computers</a></li>
+                </ul>
+            </div>
+            <div class="intro">
+                <h2>Introduction</h2>
+            </div>
+            <div class="introd">
+                <p>
+                    Throughout history, technology found its way towards improvement, time after time again and again. Technology has reached a certain point where computers became available for commercial use, working its way to generations upon generations, and thus we have the Generations of Computers.
+                </p>
+            </div>
+            <div class="info">
+                <div class="subinfo1">
+                    <h2 class="intro">First Generation</h2>
+                    <img src="Images/johnfleming.jpg" alt="John Ambrose Fleming" height="270">
+                    <img src="Images/firstgen.jpg" alt="first generation of computing" height="270">
+                    <p>
+                        In 1904, John Ambrose Fleming invented the first ever vacuum tube, patenting it as the Fleming Valve, and thus marking the beginning of the first ever generation of computers which consisted of vacuum tubes, the primary working component of early electronic circuits, and therefore, computers. 
+                        Vacuum tubes essentially acted as early binary mediums, devices that can output 0s and 1s on a circuit. 
+                        Due to the size of the vacuum tubes, the first generation computers had to be massive to accommodate such installments and complex circuitry. 
+                        The vacuum tubes have a primary disadvantage, they needed warm-up times before achieving peak-performance which was highly energy intensive and very inefficient. 
+                        The three most notable first-generation computers to use these were the ENIAC (Electronic Numerical Integrator And Computer), EDVAC (Electronic Discrete Variable Automatic Computer), and the UNIVAC (Universal Automatic Computer).
+                    </p>
+                </div>
+                <div class="subinfo2">
+                    <h2 class="intro">Second Generation</h2>
+                    <img src="Images/belllabsscientists.jpg" alt="Bell Laboratory Scientists" height="270">
+                    <img src="Images/secondgen.jpg" alt="Transistor" height="270">  
+                    <p>
+                        43 years later, on December 23, 1947, bell laboratory scientists John Bardeen, Walter Houser Brattain, and William Shockley presented and recorded the first ever successful testing of the transistor. 
+                        Having been assembled 7 days prior, this invention marked the beginning of the Second Generation of computers, paving a way for computer modernization. 
+                        Up until today, transistors still make up as the most basic component of a modern computer. 
+                        Transistors provide numerous advantages over vacuum tubes; They were significantly cheaper and more compact, they required no warm-up time, and they are more energy efficient overall, requiring less power while delivering better performance.
+                    </p>
+                </div>
+                <div class="subinfo3">
+                    <h2 class="intro">Third Generation</h2>
+                    <img src="Images/jackkilby.jpg" alt="Jack S. Kilby" height="270">
+                    <img src="Images/thirdgen.jpg" alt="Integrated Circuit" height="270">
+                    <p>
+                        Not long after, 11 years later, on September 12, 1958, Jack S. Kilby presented the first ever working integrated circuit. 
+                        The integrated circuit is composed of groups of transistors on a slightly larger breadboard. 
+                        The integrated circuit was designed to further decrease the size of electrical components whilst aiming for better performance. 
+                        Originally made for the military, Integrated Circuits became available to commercial use shortly after, and are one of the basic components of a modern computer just like the transistor.
+                    </p>
+                </div>
+                <div class="subinfo4">
+                    <h2 class="intro">Fourth Generation</h2>
+                    <img src="Images/Intel4004.jpg" alt="Intel 4004" height="270">
+                    <p>
+                        13 years later, on November 15, 1971, the first ever microprocessor, Intel 4004 was created by the Intel Corporation. 
+                        Compacting multiple transistors into a single microchip, the microprocessor promises to deliver exceptional performance and process more instructions, ultimately becoming one of the primary components of a modern computer, and soon being coined the title: “The heart and brain of the computer”. 
+                        It was yet another breakthrough in the improvement of digital technology, paving the way for the modernization of digital technology.
+                    </p>
+                </div>
+                <div class="subinfo5">
+                    <h2 class="intro">Fifth Generation</h2>
+                    <p>
+                        9 years later, in 1980, Japan took the lead in technological development, manufacturing high-performance computers, creating the so-called Fifth Generation, sparking a race of technological development between it and the United States. 
+                        The ultimate reward? Technological Domination. This period marks the beginning of the modern computing era and is still the current generation of computing up to this day.
+                    </p>
+                </div>
+            </div>   
+    </body>
+</html>
