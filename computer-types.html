@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&display=swap" rel="stylesheet">
+        <title>Forms of Computer</title>
+        <style>
+            body{
+                background-image: url(Images/futuristicbinarytech.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes col {
+                from {
+                    color: white;
+                }
+                to {
+                    color: aqua;
+                }
+            }
+            @keyframes col2 {
+                from {
+                    color: aqua;
+                }
+                to {
+                    color: white;
+                }
+            }
+            @keyframes col3 {
+                from {
+                    color: white;
+                }
+                to {
+                    color: red;
+                }
+            }
+            @keyframes col4 {
+                from {
+                    color: red;
+                }
+                to {
+                    color: white;
+                }
+            }
+            .header{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out forwards; 
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);       
+            }
+            .nav{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #2b83ba;
+                animation: fadeIn 4s ease-in-out forwards; 
+                font-size: x-large;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            ul{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a {
+                display: flex;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                animation: col2 1s ease-in-out both;
+            }
+            ul li a:hover{
+                animation: col 1s ease-in-out both;
+            }
+            .a2{
+                animation: col4 1s ease-in-out both;
+            }
+            .a2:hover{
+                animation: col3 1s ease-in-out both;
+            }
+            .info{
+                animation: fadeIn 2s ease-in-out forwards;
+                display: flex;
+                justify-content: space-around;
+                align-content: space-around;
+                height: 1450px;
+                flex-wrap: wrap;
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                text-align: justify;
+            }
+            .intro{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                color: blue;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(0, 115, 255),
+                0 0 82px rgb(0, 110, 255),
+                0 0 92px rgb(0, 90, 255),
+                0 0 102px rgb(0, 60, 255),
+                0 0 151px rgb(0, 30, 255);
+            }
+            .introd{
+                animation: fadeIn 3s ease-in-out forwards;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                margin-left: 400px;
+                margin-right: 400px;
+                text-align: justify;
+                color: white;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff;
+            }
+            .subinfo1{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(34, 120, 120);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 700px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo2{
+                animation: fadeIn 4s ease-in-out both;
+                background-color: rgb(1, 108, 109);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 700px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo3{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(0, 92, 128);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 595px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo4{
+                animation: fadeIn 7s ease-in-out both;
+                background-color: rgb(29, 29, 138);
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 680px 595px;
+                border-radius: 20px;
+                width: 650px;
+                padding: 15px;
+            }
+            .subinfo5{
+                animation: fadeIn 9s ease-in-out both;
+                background-color: navy;
+                background-image: url(Images/hud2.jpg);
+                background-repeat: no-repeat;
+                background-size: 830px 650px;
+                border-radius: 20px;
+                width: 800px;
+                padding: 15px;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="header">
+            <h1>Compworld</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="a2" href="aboutme.html">???</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="generations.html">Generations</a></li>
+                <li><a href="computer-types.html">>Types of Computers</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>Introduction</h2>
+        </div>
+        <div class="introd">
+            <p>
+                Throughout history, many technological developments took place which shaped and formed our computers into THE computers that we know and use today.
+                It is worth noting that computers can exist in many forms. 5 of which below, are the most notable ones.
+            </p>
+        </div>
+        <div class="info">
+            <div class="subinfo1">
+                <h2 class="intro">Microcomputers</h2>
+                <img src="Images/" alt="" height="270">
+                <img src="Images/" alt="" height="270">
+                    <p>
+                        These computers are the most compact. Despite their size, their performance is still able to meet user-standards. 
+                        Personal computers such as desktops, laptops and cellphones are some examples of Micro Computers.
+                    </p>
+                </div>
+                <div class="subinfo2">
+                    <h2 class="intro">Minicomputers</h2>
+                    <img src="Images/" alt="" height="270">
+                    <p>
+                        These computers are built for more computational power and are often used in departments and business enterprises for their respective purposes.
+                    </p>
+                </div>
+                <div class="subinfo3">
+                    <h2 class="intro">Mainframe Computers</h2>
+                    <img src="Images/Mainframe.jpg" alt="Mainframe Computer" height="270" width="650">
+                    <p>
+                        These computers are built to handle significant amounts of users, offering more computational power than Mini Computers. 
+                        These types of computers are built for commercial use. Web/Internet servers are some examples of mainframes.
+                    </p>
+                </div>
+                <div class="subinfo4">
+                    <h2 class="intro">Supercomputers</h2>
+                    <img src="Images/Frontier.jpg" alt="Frontier Supercomputer" width="270">
+                    <img src="Images/El Capitan.jpg" alt="El Capitan Supercomputer" width="360">
+                    <p>
+                        These computers offer significantly increased performance than mainframes, capable of processing billions of instructions per second and are therefore one of the most powerful types of computers in the world. 
+                        These computers are often used in important fields such as research and weather forecasting. 
+                        Frontier and El Capitan are two of the most notable and powerful Super Computers in the world.
+                    </p>
+                </div>
+                <div class="subinfo5">
+                    <h2 class="intro">Quantum Computers</h2>
+                    <img src="Images/Sycamore.jpg" alt="Sycamore" height="260">
+                    <img src="Images/Majorana1.jpg" alt="Majorana 1" height="260">
+                    <p>
+                        Currently the most powerful, cutting edge computers in the world. These computers are designed solely for research due to the sheer amount of instructions that it can process and the overall performance of such computers. What makes this possible is that quantum computers make use of qubits (short for quantum bits). 
+                        Unlike classical bits which are used by conventional modern computers, qubits exhibit a special property known as superposition. In the case of qubits, it allows it to be both 0 and 1 at the same time, unlike transistors which can only either be 0 or 1. 
+                        Majorana 1 (Fun Fact: Majorana 1 makes use of a brand new state of matter called Topological Superconductor, making it the most powerful Quantum Computer in the world) and Sycamore are notable examples of quantum computing chips. To minimize error, quantum computers operate at temperatures near Absolute 0 (Near -273.15 degrees Celsius) and it is achieved through Dilution Refrigeration.
+                    </p>
+                </div>
+            </div>   
+    </body>
+</html>
